@@ -4,12 +4,22 @@ A simple example for pivoting (I undesrtand that's how this is called) a table o
 
 Anyway, if it may be useful to you, go ahead...
 
-generate_data.py
-	Will generate a set of fake data corresponding to fake sensors at random locations (from the province I live in) to a local MySQL server, creating the DB and tables. Requires some python modules.
-generate_sensor_pivot_query.py
-	Will print the pivoting query to the console output, should run on any python installation.
-example_db.sql
-	In case you just want to use the DB run this one, instead of the python script.
+This will generate a set of fake data corresponding to fake sensors at random locations (from the province I live in) to a local MySQL server, creating the DB and tables. Requires some python modules.	
+
+	generate_data.py
+	
+This one Will print the pivoting query to the console output, should run on any python installation.
+
+	generate_sensor_pivot_query.py
+
+In case you just want to use the DB run this one, instead of the python script.
+
+	example_db.sql
+
+Or just look at the query to make the pivot hapen:
+
+	pivot_sensor_data.sql
+
 
 Pivoting will turn something like this:
 
@@ -35,7 +45,6 @@ Pivoting will turn something like this:
 | 2CC54C6E      | 2019-04-03 21:50:38 | S0     |   12.1381 |
 | 2CC54C6E      | 2019-04-03 21:50:38 | S1     |   1.48438 |
 | 2CC54C6E      | 2019-04-03 21:50:38 | S2     | 0.0358494 |
-+---------------+---------------------+--------+-----------+
 
 Into this:
 
